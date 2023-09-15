@@ -1,5 +1,12 @@
 #include "_printf.h"
 
+/**
+* _printf - custom variadic printf function handling all the different data types and printing them out
+* using standard i/o.
+* @format: required data type to handle the provided data in the function.
+*
+* Return: integer value coresponding to the length of the variables.
+*/
 int _printf(const char *format, ...)
 {
 	int len;
