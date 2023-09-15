@@ -24,10 +24,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'c')
 				ft_printchar((char)va_arg(ptr, int), &len);
 			else if (*format == 'd' || *format == 'i')
-			{
-				int num = va_arg(args, int);
-				len += _print_number(num);
-			}
+				 _print_number((long long)va_arg(ptr, int), 10, &len);
 		}
 		format++;
 	}
@@ -36,20 +33,17 @@ int _printf(const char *format, ...)
 
 /**
  * _print_number - Print an integer.
- * @n: The integer to print.
- *
- * Return: The number of characters printed.
+ * @nbr: The integer to print.
+ * @base: format that you want hexa or dicimal...
+ * @len: the length of the number that you will print
  */
-int _print_number(int n)
-{
-	int len = 0;
-	if (len < 0)
-	{
-		len += write(1, "-", 1);
-		n = -n;
+
+void _print_number(long long nbr, int base, int *len) {
+	if (nbr < 0) {
+		nbr *= -1;
+		*len += write(1, "-", 1);
 	}
-	if (n / 10)
-		len += _print)number(n / 10);
-	len += write(1, &((char[]{n % 10 + '0'}), 1);
-	return (len);
+	if (nbr >= base)
+		_print_number((nbr / base), base, len);
+	*len += write(1, &"0123456789abcdef"[nbr % base], 1);
 }
