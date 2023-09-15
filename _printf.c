@@ -26,10 +26,30 @@ int _printf(const char *format, ...)
 			else if (*format == 'd' || *format == 'i')
 			{
 				int num = va_arg(args, int);
-				len += _print_numbers(num);
+				len += _print_number(num);
 			}
 		}
 		format++;
 	}
 	return (va_end(ptr), len);
+}
+
+/**
+ * _print_number - Print an integer.
+ * @n: The integer to print.
+ *
+ * Return: The number of characters printed.
+ */
+int _print_number(int n)
+{
+	int len = 0;
+	if (len < 0)
+	{
+		len += write(1, "-", 1);
+		n = -n;
+	}
+	if (n / 10)
+		len += _print)number(n / 10);
+	len += write(1, &((char[]{n % 10 + '0'}), 1);
+	return (len);
 }
