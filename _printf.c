@@ -23,6 +23,11 @@ int _printf(const char *format, ...)
 				ft_put_str(va_arg(ptr, char *), &len);
 			else if (*format == 'c')
 				ft_printchar((char)va_arg(ptr, int), &len);
+			else if (*format == 'd' || *format == 'i')
+			{
+				int num = va_arg(args, int);
+				len += _print_numbers(num);
+			}
 		}
 		format++;
 	}
