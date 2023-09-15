@@ -1,5 +1,4 @@
 #include "_printf.h"
-#include <stdarg.h>
 
 /**
 * _printf - custom variadic printf function handling all the different data types and printing them out
