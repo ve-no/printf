@@ -1,1 +1,2 @@
-# printf
+
+# printf "## %s\n" "${arr[@]}" >> README.md

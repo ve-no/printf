@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PRINTF_H
+#define _PRINTF_H
 
 # include <stdlib.h>
 #include <stdarg.h>
@@ -9,3 +10,5 @@ int _printf(const char *format, ...);
 void ft_put_str(char *str, int *len);
 void ft_printchar(char c, int *len);
 void _print_number(int nbr, int base, int *len);
+
+#endif

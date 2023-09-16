@@ -30,20 +30,3 @@ int _printf(const char *format, ...)
 	}
 	return (va_end(ptr), len);
 }
-
-/**
- * _print_number - Print an integer.
- * @nbr: The integer to print.
- * @base: format that you want hexa or dicimal...
- * @len: the length of the number that you will print
- */
-
-void _print_number(int nbr, int base, int *len) {
-	if (nbr < 0) {
-		nbr *= -1;
-		*len += write(1, "-", 1);
-	}
-	if (nbr >= base)
-		_print_number((nbr / base), base, len);
-	*len += write(1, &"0123456789abcdef"[nbr % base], 1);
-}
