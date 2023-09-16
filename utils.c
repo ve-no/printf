@@ -22,16 +22,23 @@ void ft_printchar(char c, int *len) {
 
 /**
  * _print_number - Print an integer.
- * @nbr: The integer to print.
+ * @nbr: The long to print.
  * @base: format that you want hexa or dicimal...
  * @len: the length of the number that you will print
  */
-void _print_number(int nbr, int base, int *len) {
+void _print_number(long nbr, int base, int *len) {
+	unsigned int nb;
+
 	if (nbr < 0) {
-		nbr *= -1;
-		*len += write(1, "-", 1);
+		ft_printchar('-', len);
+		nb = -nbr;
 	}
-	if (nbr >= base)
-		_print_number((nbr / base), base, len);
-	*len += write(1, &"0123456789abcdef"[nbr % base], 1);
+	else
+		nb = nbr;
+	if (nb >= (unsigned long)base)
+		_print_number(nb / base, base, len);
+	if (nb % base < 10)
+		ft_printchar(nb % base + '0', len);
+	else
+		ft_printchar(nb % base - 10 + 'a', len);
 }
