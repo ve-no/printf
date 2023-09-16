@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'c')
 				ft_printchar((char)va_arg(ptr, int), &len);
 			else if (*format == 'd' || *format == 'i')
-				 _print_number((long long)va_arg(ptr, int), 10, &len);
+				 _print_number(va_arg(ptr, int), 10, &len);
 		}
 		format++;
 	}
@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
  * @len: the length of the number that you will print
  */
 
-void _print_number(long long nbr, int base, int *len) {
+void _print_number(int nbr, int base, int *len) {
 	if (nbr < 0) {
 		nbr *= -1;
 		*len += write(1, "-", 1);

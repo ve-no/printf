@@ -8,4 +8,4 @@
 int _printf(const char *format, ...);
 void ft_put_str(char *str, int *len);
 void ft_printchar(char c, int *len);
-void _print_number(long long nbr, int base, int *len);
+void _print_number(int nbr, int base, int *len);
