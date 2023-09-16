@@ -1,4 +1,4 @@
-#include "_printf.h"
+#include "main.h"
 
 /**
 * ft_put_str - print a string
