@@ -1,50 +1,45 @@
 #include "main.h"
-
 /**
-* _printf - custom variadic printf function handling all the different data types and printing them out
-* using standard i/o.
-* @format: required data type to handle the provided data in the function.
-*
-* Return: integer value coresponding to the length of the variables.
-*/
-int _printf(const char *format, ...)
+ * _printf - is a function that selects the correct function to print.
+ * @format: identifier to look for.
+ * Return: the length of the string.
+ */
+int _printf(const char * const format, ...)
 {
-	int len;
-	va_list ptr;
+	convert_match m[] = {
+		{"%s", printf_string}, {"%c", printf_char},
+		{"%%", printf_37},
+		{"%i", printf_int}, {"%d", printf_dec}, {"%r", printf_srev},
+		{"%R", printf_rot13}, {"%b", printf_bin}, {"%u", printf_unsigned},
+		{"%o", printf_oct}, {"%x", printf_hex}, {"%X", printf_HEX},
+		{"%S", printf_exclusive_string}, {"%p", printf_pointer}
+	};
 
-	len = 0;
-	va_start(ptr, format);
-	while (*format) {
-		if (*format != '%')
-			len += write(1, format, 1);
-		else if ((*format == '%') && *(format + 1)) {
-			format++;
-			if (*format == 's')
-				ft_put_str(va_arg(ptr, char *), &len);
-			else if (*format == 'c')
-				ft_printchar((char)va_arg(ptr, int), &len);
-			else if (*format == 'd' || *format == 'i')
-				 _print_number(va_arg(ptr, int), 10, &len);
-			else if (*format == 'u')
-				_print_number(va_arg(ptr, unsigned int), 10, &len);
-			else if (*format == 'o')
-				_print_number(va_arg(ptr, unsigned int), 8, &len);
-			else if (*format == 'x')
-				_print_number(va_arg(ptr, unsigned int), 16, &len);
-			else if (*format == 'X')
-				_print_number(va_arg(ptr, unsigned int), 16, &len);
-			else if (*format == 'p') {
-				len += write(1, "0x", 2);
-				_print_number(va_arg(ptr, unsigned long int), 16, &len);
+	va_list args;
+	int i = 0, j, len = 0;
+
+	va_start(args, format);
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+
+Here:
+	while (format[i] != '\0')
+	{
+		j = 13;
+		while (j >= 0)
+		{
+			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
+			{
+				len += m[j].f(args);
+				i = i + 2;
+				goto Here;
 			}
-			else if (*format == '%')
-				len += write(1, "%", 1);
-			else {
-				len += write(1, "%", 1);
-				len += write(1, format, 1);
-			}
+			j--;
 		}
-		format++;
+		_putchar(format[i]);
+		len++;
+		i++;
 	}
-	return (va_end(ptr), len);
+	va_end(args);
+	return (len);
 }
