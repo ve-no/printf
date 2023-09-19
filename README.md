@@ -17,7 +17,7 @@
   12        |  - - Flag character
   13        |  - Print Reverse String
   14        |  - rot13'ed String
-
+  15        |  :---::thumbs_up:
 ### Print a String in Reverse
     Retrieve a string argument from the variable argument list 
     If the string is NULL, assign a default value
