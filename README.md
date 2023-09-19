@@ -5,13 +5,13 @@ The printf function in C is used for formatted output. It’s part of the Standa
 
 ----------------------------------------------------------------------------------------------
 #### Authorized functions and Macros
-        ** write(man 2 write)
-        ** malloc(man 3 malloc)
-        * free(man 3 free)
-        * va_start(man 3 va_start)
-        * va_end(man 3 va_end)
-        * va_copy(man 3 copy)
-        * va_arg( man 3 va_arg)
+* write(man 2 write)
+* malloc(man 3 malloc)
+* free(man 3 free)
+* va_start(man 3 va_start)
+* va_end(man 3 va_end)
+* va_copy(man 3 copy)
+* va_arg( man 3 va_arg)
         
  ------------------------------------
  ### Compilation
