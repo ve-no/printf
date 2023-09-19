@@ -37,8 +37,8 @@ Markup: * write(man 2 write)
 
 
   ### 0-Print Anything
-         Prototype: int_printf(const char *format, ...);
-         Returns the number of characters printed(exclusing the null character used to end the               output
+Prototype: int_printf(const char *format, ...);
+Returns the number of characters printed(exclusing the null character used to end the               output
 ### 13. Print a String in Reverse
      
     Retrieve a string argument from the variable argument list 
