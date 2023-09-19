@@ -1,5 +1,5 @@
 
-# printf "## %s\n" "${arr[@]}" >> README.md
+# CUSTOM PRINTF FUNCTION
 
 ### Handle Custom Conversion Specifier 
 Identify the "R" specifier in the format string.
