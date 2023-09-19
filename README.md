@@ -18,7 +18,6 @@
   7        |  - Handling 'p' conversion specifier
   ---------|--------------------------------------
   8        |  - Handling non-custom conversion specifiers '+', '&nbsp', '#'
-  ---------|---------------------------------------------------------------
   9        |  -- Handling l and h non-custom specifiers.
 
 ### Print a String in Reverse
