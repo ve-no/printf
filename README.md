@@ -1,6 +1,15 @@
 
 # CUSTOM PRINTF FUNCTION
 
+### Print a String in Reverse
+    Retrieve a string argument from the variable argument list 
+    If the string is NULL, assign a default value
+    Calculate the length of the string
+    Print the characters in reverse order
+    For i from (j - 1) down to 0:
+    Call _putchar(s[i])  // Print the character
+    Return the length of the string
+    
 ### Handle Custom Conversion Specifier 
 Identify the "R" specifier in the format string.
 Extract the corresponding argument (string) from the argument list.
