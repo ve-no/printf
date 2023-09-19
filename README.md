@@ -11,7 +11,12 @@
   6         |  - Print String
   7         |  - Handling 'p' conversion specifier
   8         |  - Handling non-custom conversion specifiers '+', '&nbsp', '#'
-  9         |  -- Handling l and h non-custom specifiers.
+  9         |  - Handling l and h non-custom specifiers.
+  10        |  - Precision non-custom conversion specifiers
+  11        |  - 0 flag character
+  12        |  - - Flag character
+  13        |  - Print Reverse String
+  14        |  - rot13'ed String
 
 ### Print a String in Reverse
     Retrieve a string argument from the variable argument list 
