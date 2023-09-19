@@ -16,7 +16,6 @@
   6        |  - Print String
   ---------|----------------------------------------------------------------------------------
   7        |  - Handling 'p' conversion specifier
-  ---------|--------------------------------------
   8        |  - Handling non-custom conversion specifiers '+', '&nbsp', '#'
   9        |  -- Handling l and h non-custom specifiers.
 
