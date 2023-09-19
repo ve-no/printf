@@ -36,9 +36,13 @@ The printf function in C is used for formatted output. It’s part of the Standa
   15        |  :thumbs_up:
 
 
-  ### 0-Print Anything
+### 0-Print Anything
 Prototype: int_printf(const char *format, ...);
-Returns the number of characters printed(exclusing the null character used to end the               output
+Returns the number of characters printed(excluding the null character used to end the               output
+
+### 1-Integers Conversion Specifiers
+Handles 'd' and 'i' conversion specifiers without handling flag characters
+
 ### 13. Print a String in Reverse
      
     Retrieve a string argument from the variable argument list 
