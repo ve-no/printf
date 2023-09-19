@@ -1,5 +1,6 @@
 
 # CUSTOM PRINTF FUNCTION
+  ---------|----------------------------------------------------------------------------------
            | -Functions
   ---------|----------------------------------------------------------------------------------
   1        |  - custom variadic function that prints an output according to a format provided.
