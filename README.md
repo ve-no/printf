@@ -20,7 +20,6 @@
   8        |  - Handling non-custom conversion specifiers '+', '&nbsp', '#'
   ---------|---------------------------------------------------------------
   9        |  -- Handling l and h non-custom specifiers.
-  ---------|----------------------------------------------
 
 ### Print a String in Reverse
     Retrieve a string argument from the variable argument list 
