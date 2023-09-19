@@ -1,6 +1,17 @@
 
 # CUSTOM PRINTF FUNCTION
 
+## CONTENTS
+    - custom variadic function that prints an output according to a format provided.
+    - handling d & i conversion specifiers.
+    - handling unsigned int to binary b
+    - handling u, o, x, X conversion specifiers
+    - Local buffer
+    - Print String
+    - Handling 'p' conversion specifier
+    - Handling non-custom conversion specifiers '+', '&nbsp', '#'
+    -- Handling l and h non-custom specifiers.
+
 ### Print a String in Reverse
     Retrieve a string argument from the variable argument list 
     If the string is NULL, assign a default value
