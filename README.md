@@ -4,6 +4,18 @@
 The printf function in C is used for formatted output. It’s part of the Standard Input/Output       Library (stdio.h) and is responsible for printing data to the standard output (typically the        console) in a specified format. It’s an essential tool for displaying information to users and      debugging programs.
 
 ----------------------------------------------------------------------------------------------
+#### Authorized functions and Macros
+Markup: * write(man 2 write)
+        * malloc(man 3 malloc)
+        * free(man 3 free)
+        * va_start(man 3 va_start)
+        * va_end(man 3 va_end)
+        * va_copy(man 3 copy)
+        * va_arg( man 3 va_arg)
+        
+ ------------------------------------
+ ### Compilation
+    code($ gcc -Wall -Werror -pedantic -std=gnu98 *.c)
  ---------- | ------------------------------------------------------
       Qn    | -Functions
  ---------- | ----------------------------------------------------------------------------------
