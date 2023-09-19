@@ -5,15 +5,22 @@
  ----------|----------------------------------------------------------------------------------
   1        |  - custom variadic function that prints an output according to a format provided.
   ---------|----------------------------------------------------------------------------------
-   2       |  - handling d & i conversion specifiers.
-   --------|----------------------------------------------------------------------------------
-    - handling unsigned int to binary b
-    - handling u, o, x, X conversion specifiers
-    - Local buffer
-    - Print String
-    - Handling 'p' conversion specifier
-    - Handling non-custom conversion specifiers '+', '&nbsp', '#'
-    -- Handling l and h non-custom specifiers.
+  2        |  - handling d & i conversion specifiers.
+  ---------|----------------------------------------------------------------------------------
+  3        |  - handling unsigned int to binary b
+  ---------|----------------------------------------------------------------------------------
+  4        |  - handling u, o, x, X conversion specifiers
+  ---------|----------------------------------------------------------------------------------
+  5        |  - Local buffer
+  ---------|-----------------------------------------------------------------------------------
+  6        |  - Print String
+  ---------|----------------------------------------------------------------------------------
+  7        |  - Handling 'p' conversion specifier
+  ---------|--------------------------------------
+  8        |  - Handling non-custom conversion specifiers '+', '&nbsp', '#'
+  ---------|---------------------------------------------------------------
+  9        |  -- Handling l and h non-custom specifiers.
+  ---------|----------------------------------------------
 
 ### Print a String in Reverse
     Retrieve a string argument from the variable argument list 
