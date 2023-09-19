@@ -34,9 +34,12 @@ Markup: * write(man 2 write)
   13        |  - Print Reverse String
   14        |  - rot13'ed String
   15        |  :thumbs_up:
-### 13. Print a String in Reverse
 
-    
+
+  ### 0-Print Anything
+         Prototype: int_printf(const char *format, ...);
+         Returns the number of characters printed(exclusing the null character used to end the               output
+### 13. Print a String in Reverse
      
     Retrieve a string argument from the variable argument list 
     If the string is NULL, assign a default value
