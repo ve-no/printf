@@ -5,7 +5,7 @@ The printf function in C is used for formatted output. It’s part of the Standa
 
 ----------------------------------------------------------------------------------------------
 #### Authorized functions and Macros
-Markup: * write(man 2 write)
+        * write(man 2 write)
         * malloc(man 3 malloc)
         * free(man 3 free)
         * va_start(man 3 va_start)
