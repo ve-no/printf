@@ -2,11 +2,8 @@
 # CUSTOM PRINTF FUNCTION
 
 ## CONTENTS|
- ----------|----------------------------------------------------------------------------------
   1        |  - custom variadic function that prints an output according to a format provided.
-  ---------|----------------------------------------------------------------------------------
   2        |  - handling d & i conversion specifiers.
-  ---------|----------------------------------------------------------------------------------
   3        |  - handling unsigned int to binary b
   ---------|----------------------------------------------------------------------------------
   4        |  - handling u, o, x, X conversion specifiers
